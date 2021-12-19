@@ -106,7 +106,7 @@ TEST(Substrings, all) {
       auto state = automat.root();
       for (auto iter = begin; iter != end; ++iter) {
         EXPECT_EQ(state.is_way(*iter), true);
-        state.move(*iter);
+        state.move(*iter);   
       }
     }
 }
