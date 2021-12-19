@@ -6,7 +6,6 @@ jobs:
     container:
       image: docker://srzzumix/googletest:latest
     steps:
-    - uses: ./.github/actions/a
     - name: your build and test
       run: |
         make test
