@@ -10,7 +10,8 @@ jobs:
     - name: building
       run: |
         make test
-        sudo apt install clang-format
+        apt update
+        apt install clang-format -y
     - uses: actions/checkout@v2
     - name: testing
       run: |
