@@ -17,6 +17,8 @@ run_test: test
 	temp/bin/${project}
 
 format:
+	clang-tidy code/*/*.cpp
+	clang-tidy code/*/*.hpp
 	clang-format -i code/*/*.cpp
 	clang-format -i code/*/*.hpp
  
