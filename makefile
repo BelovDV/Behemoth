@@ -19,8 +19,8 @@ run_test: test
 format:
 	clang-tidy code/*/*.cpp
 	clang-tidy code/*/*.hpp
-	clang-format -i code/*/*.cpp --dry-run
-	clang-format -i code/*/*.hpp --dry-run
+	clang-format -i code/*/*.cpp --dry-run -Werror
+	clang-format -i code/*/*.hpp --dry-run -Werror
  
 .PHONY: clean
 clean:
