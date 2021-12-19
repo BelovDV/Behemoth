@@ -15,6 +15,10 @@ test:
 
 run_test: test
 	temp/bin/${project}
+
+format:
+	clang-format -i code/*/*.cpp
+	clang-format -i code/*/*.cpp
  
 .PHONY: clean
 clean:
