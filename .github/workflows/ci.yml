@@ -4,7 +4,7 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     container:
-      image: docker://google/test:latest
+      image: docker://google/test
     steps:
     - uses: ./.github/actions/a
     - name: your build and test
