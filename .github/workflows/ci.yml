@@ -6,6 +6,7 @@ jobs:
     container:
       image: docker://srzzumix/googletest:latest
     steps:
+    - uses: actions/checkout@v2
     - name: your build and test
       run: |
         make test
