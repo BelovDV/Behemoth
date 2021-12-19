@@ -7,6 +7,10 @@ jobs:
       image: docker://srzzumix/googletest:latest
     steps:
     - uses: actions/checkout@v2
-    - name: your build and test
+    - name: building
       run: |
         make test
+    - uses: actions/checkout@v2
+    - name: testing
+      run: |
+        make run_test
