@@ -130,11 +130,6 @@ TEST(Substrings, all)
 
 // ===== // ===== // ===== // ===== // ===== // ===== // ===== // ===== //
 
-TEST(CI, error)
-{
-    ASSERT_EQ(1, 0);
-}
-
 int main(int argc, char **argv)
 {
     srand(0);
