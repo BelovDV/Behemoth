@@ -112,6 +112,13 @@ TEST(Substrings, all) {
 }
 
 // ===== // ===== // ===== // ===== // ===== // ===== // ===== // ===== //
+// just demonstration i know smth else than expect_eq
+
+void bad_function() { throw 0; }
+
+TEST(Boast, exceptions) { ASSERT_ANY_THROW(bad_function()); }
+
+// ===== // ===== // ===== // ===== // ===== // ===== // ===== // ===== //
 
 int main(int argc, char **argv) {
   srand(0);
