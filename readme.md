@@ -16,8 +16,14 @@ This is expanded during working.
 
 ## Launching
 
-It doesn't contain anything now...
+It contains suffix automaton realization and google tests for it
 
-To run test:
+#### Requirement
 
-    make ???
+This project uses cmake and gtests
+
+#### Makefile
+
+To compile tests: ``` make test ```
+
+To run tests: ``` make run_test ```

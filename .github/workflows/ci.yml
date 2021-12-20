@@ -1,0 +1,20 @@
+name: Test_suffix_tree
+on: [push]
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    container:
+      image: docker://student1909/test1:latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: building
+      run: |
+        make test
+    - uses: actions/checkout@v2
+    - name: testing
+      run: |
+        make run_test
+    - uses: actions/checkout@v2
+    - name: formatting
+      run: |
+        make format
