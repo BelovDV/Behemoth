@@ -10,9 +10,6 @@ jobs:
     - name: building
       run: |
         make test
-        apt update
-        apt install clang-format -y
-        apt-get install -y clang-tidy
     - uses: actions/checkout@v2
     - name: testing
       run: |
