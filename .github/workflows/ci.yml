@@ -4,7 +4,7 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     container:
-      image: docker://srzzumix/googletest:latest
+      image: docker://student1909/test1:latest
     steps:
     - uses: actions/checkout@v2
     - name: building
